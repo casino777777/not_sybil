@@ -8,13 +8,18 @@
     <script>
         tailwind.config = {
             theme: {
+                screens: {
+                    'sm': '380px',
+                    'md': '380px',
+                    'lg': '410px',
+                    'xl': '450px',
+                    '2xl': '500px',
+                    '3xl': '550px',
+                    '4xl': '600px',
+                },
                 extend: {
                     fontFamily: {
                         customFont: ['"Poetsen One"', "sans-serif"],
-                    },
-                    backgroundImage: {
-                        'first-screen': "url('./newspaper_14k_v1.jpg')",
-                        'two-screen': "url('./sclass2.jpg')"
                     },
                     colors: {
                         'regal-blue': '#0060a9',
@@ -30,11 +35,11 @@
     </style>
 </head>
 
-<body class="bg-black">
-    <div class="w-screen h-max">
-        <img src="./background1_v1.jpg" class="" alt="">
+<body class="bg-black flex flex-col justify-center items-center">
+    <div class="relative flex max-w-[1000px] h-max">
+        <img src="./background1_v1.jpg" alt="">
         <a href="https://dedust.io/swap/EQAPLFb1jQ0yJONwAAo34xXDzQAhJHMUvlU9Yj5y6iWDIyYh"
-            class="absolute top-[460px] left-1/2 transform -translate-x-1/2 flex">
+            class="absolute top-[440px] md:top-[460px] lg:top-[500px] xl:top-[580px] 2xl:top-[640px] 3xl:top-[710px] 4xl:top-[780px] left-1/2 transform -translate-x-1/2 flex">
             <button type="button" class="inline-block px-3 py-3 font-bold text-center text-white uppercase items-center align-middle transition-all
             rounded-[50px] cursor-pointer bg-gradient-to-tl from-regal-blue to-regal-purple leading-pro text-xs ease-soft-in
             tracking-tight-soft shadow-soft-md bg-150 bg-x-25 hover:scale-110 hover:rotate-2 hover:bg-pink-700 hover:text-pink-200
@@ -50,11 +55,12 @@
             </button>
         </a>
     </div>
-    <div class="relative w-screen h-max">
+    <div class="relative flex max-w-[1000px] h-max">
         <img src="./background2.jpeg" class="" alt="">
-        <img src="./BRYAN.png" class="button absolute bottom-[140px] left-1/2 transform -translate-x-1/2 h-[360px] z-10" alt="">
+        <img src="./BRYAN.png" class="button absolute bottom-[130px] xl:bottom-[136px] 2xl:bottom-[150px] left-1/2 transform -translate-x-1/2 h-[360px] lg:h-[390px] xl:h-[420px] 2xl:h-[440px] 3xl:h-[460px] 4xl:h-[480px] z-10"
+            alt="">
         <a href="https://dedust.io/swap/EQAPLFb1jQ0yJONwAAo34xXDzQAhJHMUvlU9Yj5y6iWDIyYh">
-            <div class="button absolute bottom-[54px] left-1/2 transform -translate-x-1/2 w-[320px] h-[130px] bg-regal-blue  cursor-pointer select-none
+            <div class="button absolute bottom-[44px] left-1/2 transform -translate-x-1/2 w-[320px] h-[130px] xl:w-[340px] xl:h-[140px] 2xl:w-[380px] 2xl:h-[160px] 4xl:w-[400px] 4xl:h-[165px] bg-regal-blue  cursor-pointer select-none
             active:translate-y-2  active:[box-shadow:0_0px_0_0_#1b6ff8,0_0px_0_0_#1b70f841]
             active:border-b-[0px]
             transition-all duration-150 [box-shadow:0_10px_0_0_#1b6ff8,0_15px_0_0_#1b70f841]
